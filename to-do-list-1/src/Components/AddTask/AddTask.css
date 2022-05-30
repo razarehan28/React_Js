@@ -1,0 +1,22 @@
+.add-task-container {
+  padding-top: 1rem;
+  position: relative;
+}
+.btn {
+  height: 60px;
+  width: 60px;
+  border-radius: 60%;
+  background-color: #51d29a;
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+  border: none;
+}
+.form {
+  display: block;
+  margin-top: -1rem;
+}
+.form-hidden {
+  display: none;
+}

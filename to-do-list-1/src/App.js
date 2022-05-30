@@ -1,12 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-import HeaderDate from './Component/DateTodo/HeaderDate';
+import { useState } from "react";
 
+import "./App.css";
+import TodoList from "./Components/TodoList";
+import AddTask from "./Components/AddTask/AddTask";
+import defaultTodos from "./Components/ListItems.json";
+import HeaderTodo from "./Components/HeaderTodo/HeaderTodo";
 
 function App() {
+  const [todos, setTodos] = useState(defaultTodos);
+  //  input will be submitted via inputForm
+  const addTodoHandler = (todo) => {
+    setTodos((prevTodo) => {
+      return [...prevTodo, todo];
+    });
+  };
   return (
     <div className="App">
-   <HeaderDate />
+      <div className="todo-container">
+        <HeaderTodo />
+        <TodoList todos={todos} />
+        <AddTask onAddTodo={addTodoHandler} />
+      </div>
     </div>
   );
 }

@@ -1,18 +1,17 @@
 import React from "react";
 
-import "./HeaderDate.css";
+import "./HeaderTodo.css";
 
-function HeaderDate() {
+function HeaderTodo() {
   const date = new Date();
-  const todayDate = date.toLocaleString("en-US", { day: "2-digit" });
-  const year = date.toLocaleString("en-US", { year: "numeric" });
-  const weekday = date.toLocaleString("en-US", { weekday: "long" });
+  const day = date.toLocaleString("en-US", { day: "2-digit" });
   const month = date.toLocaleString("en-US", { month: "short" });
-
+  const year = date.toLocaleString("en-US", { year: "numeric" });
+  const weekday = date.toLocaleString("en-us", { weekday: "long" });
   return (
-    <div className="header-todo">
+    <div className="header">
       <div className="date">
-        <div className="today-date">{todayDate}</div>
+        <div className="day">{day}</div>
         <div>
           <div className="month">{month.toUpperCase()}</div>
           <div className="year">{year}</div>
@@ -23,4 +22,4 @@ function HeaderDate() {
   );
 }
 
-export default HeaderDate;
+export default HeaderTodo;
