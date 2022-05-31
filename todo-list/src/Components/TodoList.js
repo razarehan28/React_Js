@@ -7,8 +7,7 @@ function TodoList({ todos }) {
   return (
     <>
       <div className="list-container">
-        {todos && todos.map((todo) => 
-        <ListItem key={todo.id} todo={todo} />)}
+        {todos && todos.map((todo) => <ListItem key={todo.id} todo={todo} />)}
       </div>
     </>
   );
