@@ -1,0 +1,29 @@
+.add-task-container {
+  padding-top: 2rem;
+  position: relative;
+}
+.button {
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 60%;
+  background-color: #48d799;
+  position: absolute;
+  top: 3rem;
+  left: 4rem;
+  cursor: pointer;
+}
+.btn-hidden {
+  visibility: hidden;
+}
+.button:hover {
+  background-color: #25ac72;
+}
+.form-container {
+  display: block;
+  margin-top: -0.3rem;
+}
+.form-hidden {
+  display: none;
+}
+
