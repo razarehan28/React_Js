@@ -8,23 +8,6 @@ function AddTask({ onAddTodo }) {
   function clickHandler(e) {
     !isClicked ? setIsClicked(true) : setIsClicked(false);
   }
-  const [enteredTodo, setEnteredTodo] = useState([]);
-  //  form submission
-  function submitHandler(event) {
-    const { preventDefault } = event;
-    preventDefault();
-    // error handling for not giving input
-    if (enteredTodo === "") {
-      alert("Please enter the todo.");
-    } else {
-      const defaultTodos = {
-        id: Math.random().toString(),
-        title: enteredTodo,
-      };
-      onAddTodo(defaultTodos);
-      setEnteredTodo("");
-    }
-  }
   return (
     <div className="add-task-container">
       <form
