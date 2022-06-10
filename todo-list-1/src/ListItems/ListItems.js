@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import taskIcon from "../Images/checked.jpg";
 function ListItems({ todo }) {
   const [checked, setChecked] = useState(localStorage.getItem(todo.id));
-  //  handling a the input checkbox
+  //  handling  the input checkbox
   const checkedHandler = (event) => {
     const notChecked = event.target.checked;
     if (notChecked) {

@@ -1,5 +1,5 @@
 .add-task-container {
-  padding-top: 2rem;
+  padding-top: 35px;
   position: relative;
 }
 .button {
@@ -9,8 +9,8 @@
   border-radius: 60%;
   background-color: #48d799;
   position: absolute;
-  top: 3rem;
-  left: 4rem;
+  top: 50px;
+  left: 70px;
   cursor: pointer;
 }
 .btn-hidden {
@@ -21,7 +21,7 @@
 }
 .form-container {
   display: block;
-  margin-top: -0.3rem;
+  margin-top: 10px;
 }
 .form-hidden {
   display: none;

@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 
 import "./App.css";
 import HeaderTodo from "./Components/HeaderTodo/HeaderTodo";
-import TodoList from "./Components/TodoList";
+import TodoList from "./TodoList/TodoList";
 import AddTask from "./Components/AddTask/AddTask";
 
-function getFromLocalStorage() {
+function getDataFromLocalStorage() {
   const local = new Date();
   const current = local.getTime();
   let setTime = localStorage.getItem("date"); // from localstorage
@@ -20,7 +20,7 @@ function getFromLocalStorage() {
   }
 }
 function App() {
-  const [todos, setTodos] = useState(getFromLocalStorage());
+  const [todos, setTodos] = useState(getDataFromLocalStorage());
   const addTodoHandler = (todo) => {
     setTodos((todos) => [...todos, todo]);
   };

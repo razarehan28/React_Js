@@ -7,7 +7,7 @@ function AddTask({ onAddTodo }) {
   const [enterTodo, setEnteredTodo] = useState([]);
   const [clicked, setClicked] = useState(false);
   function clickHandler() {
-    !clicked ? setClicked(true) : setClicked(false);
+    clicked ? setClicked(false) : setClicked(true);
   }
   // on form submission handler
   function addNewTaskHandler(event) {
@@ -31,8 +31,7 @@ function AddTask({ onAddTodo }) {
   };
   return (
     <div className="add-task-container">
-      <form
-        className={clicked ? "form-container" : "form-hidden"}
+      <form className={clicked ? "form-container" : "form-hidden"}
         onSubmit={addNewTaskHandler}
       >
         <input
