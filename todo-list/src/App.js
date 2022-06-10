@@ -19,7 +19,7 @@ function App() {
       <div className="todo-container">
         <HeaderTodo />
         <TodoList todos={todos} />
-        <AddTask onAddTodo={addTodoHandler} />
+        <AddTask onAddTodo={addTodoHandler}/>
       </div>
     </div>
   );
