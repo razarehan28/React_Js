@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import "./App.css";
-import TodoList from "./Components/TodoList";
+import TodoList from "./Components/TodoList/TodoList";
 import AddTask from "./Components/AddTask/AddTask";
 import defaultTodos from "./Components/ListItems.json";
 import HeaderTodo from "./Components/HeaderTodo/HeaderTodo";

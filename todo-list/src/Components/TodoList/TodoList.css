@@ -9,17 +9,17 @@
   color: #c1c1c1;
 }
 .list:first-child {
-  padding-top: 1rem;
+  padding-top: 15px;
 }
 .list p {
-  font-size: 0.8rem;
+  font-size: 14px;
 }
 .list {
   height: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 0.5rem;
+  padding-top: 8px;
 }
 .not-completed {
   color: #555555;
@@ -54,7 +54,7 @@
   display: block;
   border: 2px solid #f5f6f5;
   border-radius: 50%;
-  background-image: url("../Images/icon.jpg");
+  background-image: url("../../Images/icon.jpg");
   position: absolute;
   width: 12px;
   height: 12px;
