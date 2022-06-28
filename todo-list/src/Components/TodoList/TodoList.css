@@ -1,5 +1,5 @@
 .list-container {
-  height: 275px;
+  height: 17rem;
   overflow-y: scroll;
 }
 .list-container::-webkit-scrollbar {
@@ -9,17 +9,17 @@
   color: #c1c1c1;
 }
 .list:first-child {
-  padding-top: 15px;
+  padding-top: 1rem;
 }
 .list p {
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 .list {
-  height: 30px;
+  height: 1.9rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 8px;
+  padding-top: 0.5rem;
 }
 .not-completed {
   color: #555555;
@@ -31,10 +31,10 @@
 .list-checkbox:before {
   content: "";
   display: block;
-  width: 20px;
-  height: 20px;
-  top: -5px;
-  left: -5px;
+  width: 1.3rem;
+  height: 1.3rem;
+  top: -0.2rem;
+  left: -0.2rem;
   position: absolute;
   background-color: #f6f8f6;
   border-radius: 50%;
@@ -46,8 +46,8 @@
   left: -5px;
   display: block;
   background-color: #15eb80;
-  width: 20px;
-  height: 20px;
+  width: 1.2rem;
+  height: 1.2rem;
 }
 .list-checkbox:checked:after {
   content: "";
@@ -56,8 +56,8 @@
   border-radius: 50%;
   background-image: url("../../Images/icon.jpg");
   position: absolute;
-  width: 12px;
-  height: 12px;
+  width: 0.8rem;
+  height: 0.8rem;
   top: -2px;
   left: -3px;
 }

@@ -5,26 +5,26 @@
 }
 .date {
   display: flex;
-  gap: 5px;
+  gap: 0.3rem;
   color: #5b5e6a;
   align-items: center;
 }
 .day {
   display: flex;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: bold;
 }
 .month {
-  font-size: 10px;
+  font-size: 0.6rem;
   color: #8d8f9a;
   font-weight: bold;
 }
 .year {
-  font-size: 12px;
+  font-size: 0.8rem;
   color: #919191;
 }
 .weekday {
-  font-size: 12px;
+  font-size: 0.9rem;
   font-weight: bold;
   color: #676565;
 }

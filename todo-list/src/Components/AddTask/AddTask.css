@@ -1,11 +1,11 @@
 .btn {
-  height: 60px;
-  width: 60px;
+  height: 3.8rem;
+  width: 3.8rem;
   border-radius: 60%;
   background-color: #51d29a;
   cursor: pointer;
-  position: absolute;
-  top: 2rem;
-  left: 45rem;
+  position: relative;
+  top: 2.5rem;
+  left: 4.2rem;
   border: none;
 }
