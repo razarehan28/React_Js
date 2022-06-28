@@ -10,7 +10,7 @@
   background-color: #48d799;
   position: absolute;
   top: 50px;
-  left: 70px;
+  left: 75px;
   cursor: pointer;
 }
 .btn-hidden {
@@ -23,7 +23,9 @@
   display: block;
   margin-top: 10px;
 }
+.form-container-hidden {
+  display: none;
+}
 .form-hidden {
   display: none;
 }
-

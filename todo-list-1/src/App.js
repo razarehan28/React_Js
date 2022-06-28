@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import "./App.css";
 import HeaderTodo from "./Components/HeaderTodo/HeaderTodo";
-import TodoList from "./TodoList/TodoList";
+import TodoList from "./Components/TodoList/TodoList";
 import AddTask from "./Components/AddTask/AddTask";
 
 function getDataFromLocalStorage() {

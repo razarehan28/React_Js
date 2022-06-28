@@ -2,31 +2,34 @@
   height: 280px;
   position: relative;
 }
-.list {
-  height: 35px;
-  justify-content: space-between;
-  padding-top: 10px;
-  display: flex;
-  align-items: center;
-}
-.null {
+.empty-statement {
   font-size: 15px;
-  font-style: normal;
   text-align: center;
   position: absolute;
-  font-weight: bold;
-  top: 100px;
-  left: 15px;
-  color: #6a6b6f;
+  top: 120px;
+  left: 20px;
+  color: #91959b;
+}
+.list {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1px;
 }
 .not-completed {
   color: #555555;
 }
 .completed {
-  color: #86898e;
+  color: #91959b;
 }
 .list:first-child {
-  padding-top: 15px;
+  padding-top: 20px;
+}
+.list p {
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .list-checkbox {
   position: absolute;
@@ -41,25 +44,25 @@
   height: 20px;
   top: -3px;
   left: -5px;
-  background-color: #e8e6e6;
+  background-color: #e9e9e9;
   border-radius: 50%;
 }
 .list-checkbox:checked:after {
   content: "";
   display: block;
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   position: absolute;
   top: -1px;
-  left: -1px;
+  left: -0px;
 }
-.checked {
-  height: 35px;
-  width: 35px;
+.task-icon {
+  height: 15px;
+  width: 15px;
   position: absolute;
-  right: 1px;
-  border: 2px solid #f9fdfb;
+  right: 2px;
+  border: 2px solid #4fe3a4;
   border-radius: 50%;
   z-index: 1;
 }

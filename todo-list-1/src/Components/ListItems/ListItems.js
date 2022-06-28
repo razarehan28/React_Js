@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import taskIcon from "../Images/checked.jpg";
+import taskIcon from "../../Images/checked.jpg";
 function ListItems({ todo }) {
   const [checked, setChecked] = useState(localStorage.getItem(todo.id));
   //  handling  the input checkbox
@@ -23,7 +23,7 @@ function ListItems({ todo }) {
         onChange={checkedHandler}
       />
       <img
-        className={checked ? "checked show" : "checked hidden"}
+        className={checked ? "task-icon show" : "task-icon hidden"}
         src={taskIcon}
         alt=""
       />
